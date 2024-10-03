@@ -1,0 +1,19 @@
+
+Problem 1: Gemini 1.5 Flash with a 1 million token context size is great for handling large inputs, 
+but if we're dealing with very large or multiple documents, Retrieval-Augmented Generation (RAG) is a 
+better approach. RAG retrieves only the most relevant information, reducing the input size 
+passed to the model and improving efficiency without sacrificing relevance.
+
+Problem 2: if our query's response exceeds 8196 tokens, we can 
+split the input into smaller chunks and process them iteratively, 
+or use a sliding window technique to maintain context between outputs. 
+Alternatively, we can generate summaries or break the query into smaller, 
+manageable parts to fit within the token limit.
+
+Problem 3: we can evaluate a Large Language Model (LLM) using several key metrics. Perplexity measures how 
+well the model predicts text, with lower perplexity indicating better fluency. Human evaluation is important for 
+assessing relevance, coherence, and overall quality of the output, especially in open-ended or complex tasks. 
+Factual accuracy ensures the model provides correct information, which is critical for tasks like question 
+answering or summarization. Also, assess latency to measure response times and efficiency in real-time applications, 
+and test for bias and robustness by providing diverse, ambiguous, or 
+noisy inputs to ensure the model performs fairly and consistently across various scenarios.
